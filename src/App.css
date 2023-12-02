@@ -1,38 +1,236 @@
-.App {
-  text-align: center;
+@import url("./IcoMoon/style.css");
+
+.market {
+    display: flex;
+    padding-top: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 1100px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.divproduct {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.phoneimg {
+    width: 300px;
+    height: 300px;
+}
+
+.cart {
+    width: 400px;
+    padding: 15px;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    border: 1px solid #2d496b;
+    margin-top: 60px;
+    background-color: #d8d7d7;
+    overflow-y: scroll;
+    height: 400px;
+}
+
+
+
+.openclick {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+.Counter {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 15px;
+    color: rgb(255, 0, 0);
+}
+
+.cartxt {
+    text-align: center;
+    font-size: 34px;
+}
+
+.total {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+}
+.total span{
+    font-size: 18px;
 }
 
-.App-link {
-  color: #61dafb;
+.nav {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 3;
+    width: calc(100% - 30px);
+    height: 50px;
+    background: #2d496b;
+    justify-content: space-between;
+    padding: 0px 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.left img {
+    width: 220px;
+    cursor: pointer;
+    margin-left: 10px;
+    
 }
+
+.openclick .icon-shopping-cart {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
+
+.filter-phone {
+    outline: none;
+    border: none;
+    background: none;
+    color: white !important;
+    font-size: 18px !important;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+.filterdiv {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 400px;
+    height: 300px;
+    background-color: #ccc;
+    padding: 15px;
+    overflow-y: scroll;
+}
+
+.btn-add {
+    background: rgb(150, 148, 148);
+    outline: none;
+    border: none;
+    width: 160px;
+    color: aliceblue;
+    height: 30px;
+    cursor: pointer;
+}
+
+.btn-add .icon-shopping-cart {
+    color: #2d496b;
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+.phone-info {
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+@media screen and (max-width:1470px) {
+    .products {
+        max-width: 900px;
+    }
+
+}
+
+@media screen and (max-width:1239px) {
+    .products {
+        justify-content: unset;
+    }
+}
+
+
+@media screen and (max-width:1112px) {
+    .cart {
+        width: 300px;
+    }
+
+    .filterdiv {
+        width: 300px;
+    }
+}
+
+
+@media screen and (max-width:988px) {
+    .products {
+        max-width: 600px;
+        justify-content: center;
+    }
+}
+
+
+@media screen and (max-width:817px) {
+    .products {
+        justify-content: unset;
+    }
+    .cartxt{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:720px) {
+    .cart {
+        width: 250px;
+    }
+    .filterdiv {
+        width: 250px;
+    }
+}
+
+@media screen and (max-height: 892px) {
+   .filterdiv{
+    background: rgba(0, 0, 0, 0.7);
+    bottom: unset;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white !important;
+   }
+   .filterdiv h2{
+    margin-top: 90px;
+   }
+}
+
+@media screen and (max-width:363px) {
+    .filter-phone{
+        margin: unset;
+    }
+
+    .left img{
+        margin-left: unset;
+    }
+}
+
+@media screen and (max-width:601px) {
+.cart{
+    height: 200px;
+    top:  72%;
+    left: 50%;
+    transform: translate(-50%, -50% );
+}
+.divproduct{
+    margin: unset;
+}
+
+.left img{
+    width: 180px;
+}
+.products{
+    justify-content: center;
+}
+
+}
+
