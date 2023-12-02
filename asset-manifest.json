@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/Phone-market/static/css/main.dcff5fc6.css",
+    "main.js": "/Phone-market/static/js/main.3ee42c0f.js",
+    "static/js/787.ceba7239.chunk.js": "/Phone-market/static/js/787.ceba7239.chunk.js",
+    "static/media/icomoon.svg?b7e1xg": "/Phone-market/static/media/icomoon.f304974d1727197b4acd.svg",
+    "static/media/icomoon.eot?b7e1xg": "/Phone-market/static/media/icomoon.b6e89026eb95254dcb34.eot",
+    "static/media/icomoon.woff?b7e1xg": "/Phone-market/static/media/icomoon.dd63d089d3464b140d89.woff",
+    "static/media/icomoon.ttf?b7e1xg": "/Phone-market/static/media/icomoon.f9605fca609704ec1aae.ttf",
+    "index.html": "/Phone-market/index.html",
+    "main.dcff5fc6.css.map": "/Phone-market/static/css/main.dcff5fc6.css.map",
+    "main.3ee42c0f.js.map": "/Phone-market/static/js/main.3ee42c0f.js.map",
+    "787.ceba7239.chunk.js.map": "/Phone-market/static/js/787.ceba7239.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dcff5fc6.css",
+    "static/js/main.3ee42c0f.js"
+  ]
+}
